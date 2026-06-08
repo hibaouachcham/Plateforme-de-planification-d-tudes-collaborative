@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build (production)
+        run: npm run build
+
+      - name: Install Chrome for Karma
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Unit tests (headless)
+        run: npm run test -- --no-watch --browsers=ChromeHeadlessCI --progress=false
+        env:
+          CHROME_BIN: chrome

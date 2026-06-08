@@ -1,0 +1,15 @@
+com\syncstudy\service\AdminServiceTest$SendResetPassword.class
+com\syncstudy\service\AvailabilityIntersectionServiceTest$FindLongestCommonSlot.class
+com\syncstudy\service\AuthServiceTest.class
+com\syncstudy\service\AuthServiceTest$ResetPasswordDirect.class
+com\syncstudy\service\AdminServiceTest$CreateUser.class
+com\syncstudy\service\AdminServiceTest$DeleteUser.class
+com\syncstudy\service\AvailabilityIntersectionServiceTest$IsSlotCoveredByCommon.class
+com\syncstudy\service\AdminServiceTest$ToggleStatus.class
+com\syncstudy\service\AuthServiceTest$Register.class
+com\syncstudy\service\AvailabilityIntersectionServiceTest.class
+com\syncstudy\service\AuthServiceTest$Login.class
+com\syncstudy\service\NotificationServiceTest.class
+com\syncstudy\service\AuthServiceTest$GetPasswordHint.class
+com\syncstudy\service\AdminServiceTest.class
+com\syncstudy\service\AvailabilityIntersectionServiceTest$ComputeCommonSlots.class
